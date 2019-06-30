@@ -1,0 +1,53 @@
+$desktop: 900px;
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  header {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding: 1rem;
+
+    #logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  #content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+
+    header {
+      background: black;
+      color: white;
+      width: 20vw;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+
+      #logo {
+        width: 16vw;
+        height: 16vw;
+        font-size: 3.5rem;
+        font-weight: bold;
+        border-radius: 50%;
+        background: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15vh;
+      }
+    }
+  }
+
+}

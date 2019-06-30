@@ -1,0 +1,15 @@
+.button {
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  transition: all 300ms ease;
+  border: none;
+  outline: none;
+  padding: 1rem 3rem;
+
+  &:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0.125rem 0.25rem lightgrey;
+  }
+}
