@@ -1,0 +1,19 @@
+version: "3"
+services:
+  block_one:
+    build:
+      context: .
+      dockerfile: react.dockerfile
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    ports:
+      - 3000:3000
+  test_ui:
+    build:
+      context: .
+      dockerfile: test-ui.dockerfile
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3001:3000
