@@ -2,6 +2,8 @@
 
 Shows the last 10 blocks on the [Block.one](https://block.one/) blockchain, fetched from <https://api.eosnewyork.io>. Utilizes [EOSJS](https://github.com/EOSIO/eosjs) to retrieve block information.
 
+View live demo at <https://ryantate13.github.io/block-one/>.
+
 ## Running the application
 
 Clone this repository locally. The project's Makefile contains targets for launching and running the test suite. The development environment, powered by [create-react-app](https://github.com/facebook/create-react-app), and the test UI, running [Jest](https://github.com/facebook/jest) in the browser via [Majestic](https://github.com/Raathigesh/majestic), will be available on local ports 3000 and 3001 respectively. Launching the application requires Docker and docker-compose (1.13.0+) to be installed on the host machine.
