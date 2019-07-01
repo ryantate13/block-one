@@ -1,6 +1,7 @@
 .loading {
   animation: spin 2s infinite linear;
   display: inline-flex;
+  line-height: 1px;
 
   @keyframes spin {
     from {
