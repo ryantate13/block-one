@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
-import Model from './Model';
-import './App.scss';
 
-import BlockLoader from './BlockLoader';
+import Model from './Model';
 import mk_dispatch from './mk_dispatch';
+import Header from './Header';
+import Content from './Content';
+
+import './App.scss';
 
 let dispatch;
 
@@ -14,14 +16,8 @@ function App() {
 
     return (
         <div id="app">
-            <header>
-                <div id="logo">
-                    block.one
-                </div>
-            </header>
-            <div id="content">
-                <BlockLoader dispatch={dispatch} loading={state.loading} />
-            </div>
+            <Header dispatch={dispatch} blocks={state.blocks} loading={state.loading} />
+            <Content {...{...state, dispatch}} />
         </div>
     );
 }

@@ -1,4 +1,4 @@
-$desktop: 900px;
+@import 'vars';
 
 #app {
   display: flex;
@@ -9,6 +9,9 @@ $desktop: 900px;
     background: rgba(255, 255, 255, 0.5);
     color: black;
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
     #logo {
       font-size: 2rem;
@@ -19,6 +22,7 @@ $desktop: 900px;
   #content {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -27,16 +31,19 @@ $desktop: 900px;
     flex-direction: row;
 
     header {
+      flex: 1;
       background: black;
       color: white;
       width: 20vw;
       padding: 0;
-      display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
 
       #logo {
         width: 16vw;
         height: 16vw;
+        margin: 15vh 2vw;
         font-size: 3.5rem;
         font-weight: bold;
         border-radius: 50%;
@@ -45,8 +52,12 @@ $desktop: 900px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 15vh;
       }
+    }
+
+    #content {
+      flex: 4;
+      max-width: 80vw;
     }
   }
 

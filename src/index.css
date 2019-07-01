@@ -15,7 +15,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+pre {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  white-space: pre-wrap;
 }

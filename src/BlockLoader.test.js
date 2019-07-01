@@ -5,8 +5,7 @@ import BlockLoader from './BlockLoader';
 
 Enzyme.configure({adapter: new Adapter()});
 
-const dispatch = jest.fn(() => {
-});
+const dispatch = jest.fn();
 
 describe('<BlockLoader />', () => {
     it('generates a button', () => {
@@ -14,11 +13,11 @@ describe('<BlockLoader />', () => {
         expect(wrapper.find('button').length).toBe(1);
     });
 
-    it('call dispatch when clicked', () => {
+    it('calls dispatch when clicked', () => {
         const wrapper = shallow(<BlockLoader dispatch={dispatch} loading={false}/>);
         expect(dispatch).not.toHaveBeenCalled();
         wrapper.find('button').simulate('click');
-        expect(dispatch).toHaveBeenCalled();
+        expect(dispatch).toHaveBeenCalledWith({type: 'get_blocks'});
     });
 
     it('is disabled when loading', () => {
@@ -27,5 +26,13 @@ describe('<BlockLoader />', () => {
         wrapper.setProps({loading: true});
         wrapper.update();
         expect(wrapper.find('button').prop('disabled')).toBeTruthy();
+    });
+
+    it('supports ghost style', () => {
+        const wrapper = shallow(<BlockLoader dispatch={dispatch} loading={false} ghost={false}/>);
+        expect(wrapper.find('.ghost').length).toBe(0);
+        wrapper.setProps({ghost: true});
+        wrapper.update();
+        expect(wrapper.find('.ghost').length).toBe(1);
     });
 });

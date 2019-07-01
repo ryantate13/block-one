@@ -1,0 +1,36 @@
+@import 'vars';
+
+.block {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+  padding: 1rem;
+
+  .info {
+    display: flex;
+
+    .stats {
+      flex: 1;
+    }
+
+    .toggle {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+    }
+  }
+
+  .raw {
+    max-height: 0;
+    max-width: 95%;
+    margin: auto;
+    overflow: hidden;
+    transition: max-height 1s ease;
+
+    &.open {
+      max-height: 10000vh;
+      white-space: pre-wrap;
+    }
+  }
+}

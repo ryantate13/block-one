@@ -1,0 +1,12 @@
+@import 'vars';
+
+.blocks {
+  max-height: 100vh;
+  overflow: auto;
+  padding: 0;
+  max-width: 100%;
+
+  @media screen and (min-width: $desktop){
+    padding: 0 3rem;
+  }
+}
