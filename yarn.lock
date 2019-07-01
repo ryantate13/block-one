@@ -5847,6 +5847,11 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
+node-fetch@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
+  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+
 node-forge@0.7.5:
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.7.5.tgz#6c152c345ce11c52f465c2abd957e8639cd674df"
@@ -8858,6 +8863,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+variable-type@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/variable-type/-/variable-type-0.2.0.tgz#042ba9bb3309719b4ee27be26074af3309b6963e"
+  integrity sha512-Mu8HShOWQzpEO68WgZpJIlMYdFv7YjeVL8euMbxqxMkvYe0gMqj5M0d0TvJtQ5r03JSqh2txCdWqGtMBC0aiOw==
 
 vary@~1.1.2:
   version "1.1.2"

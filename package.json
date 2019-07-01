@@ -34,6 +34,8 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest-mock-console": "^1.0.0",
-    "node-sass": "^4.12.0"
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.12.0",
+    "variable-type": "^0.2.0"
   }
 }
