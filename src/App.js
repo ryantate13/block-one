@@ -1,18 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import Model from './Model';
-import mk_dispatch from './mk_dispatch';
+import useDispatch from './useDispatch';
 import Header from './Header';
 import Content from './Content';
 
 import './App.scss';
 
-let dispatch;
-
 function App() {
-    const [state, setState] = useState(Model.empty());
-
-    dispatch = mk_dispatch(setState, Model.reduce);
+    const {state, dispatch} = useDispatch(Model.empty(), Model.reduce);
 
     return (
         <div id="app">

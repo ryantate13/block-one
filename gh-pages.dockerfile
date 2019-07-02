@@ -30,4 +30,4 @@ CMD git init \
     && git remote add origin ${REPO} \
     && git add -A \
     && git commit -m "github pages build" \
-    && git push -f origin master:gh-pages \
+    && git push -f origin master:gh-pages
